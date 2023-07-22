@@ -1,5 +1,7 @@
 import React from 'react';
 
+import CookieConsent from 'react-cookie-consent';
+
 import About from '../components/About';
 import Analytics from '../components/Analytics';
 import Canvas from '../components/Canvas';
@@ -12,14 +14,36 @@ import Pricing from '../components/Pricing';
 import Product from '../components/Product';
 
 const App = () => {
+  // eslint-disable-next-line global-require
+  require('dotenv').config();
   return (
     <div className={`bg-background grid gap-y-16 overflow-hidden`}>
+      <CookieConsent
+        location="bottom"
+        buttonText="OK"
+        cookieName="CookieBanner"
+        style={{ background: '#FF914D' }}
+        buttonStyle={{
+          background: '#FFFFFF',
+          color: '#4e503b',
+          fontSize: '13px',
+        }}
+        expires={150}
+      >
+        Um unsere Webseite für Sie optimal zu gestalten und fortlaufend
+        verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung
+        der Webseite stimmen Sie der Verwendung von Cookies zu.{' '}
+        <span style={{ fontSize: '10px' }}>
+          Weitere Informationen zu Cookies erhalten Sie in unserer
+          Datenschutzerklärung.
+        </span>
+      </CookieConsent>
       <div className={`relative bg-background`}>
         <div className="max-w-7xl mx-auto">
           <div
             className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
           >
-            <Header />
+            <Header mainPage={true} />
             <MainHero />
           </div>
         </div>

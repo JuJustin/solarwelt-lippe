@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 
 import config from '../config/index.json';
 
-const Menu = () => {
+const Menu = ({ mainPage }: { mainPage: boolean }) => {
   const { navigation, company, callToAction } = config;
   const { name: companyName, logo } = company;
 
@@ -30,9 +30,13 @@ const Menu = () => {
           >
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
               <div className="flex items-center justify-between w-full md:w-auto">
-                <a href="#">
+                <a href="../">
                   <span className="sr-only">{companyName}</span>
-                  <img alt="logo" className="h-16 w-auto sm:h-16" src={logo} />
+                  <img
+                    alt="logo"
+                    className="h-24 scale-150 w-auto sm:h-24"
+                    src={logo}
+                  />
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button
@@ -55,14 +59,14 @@ const Menu = () => {
                   to={item.href}
                   className="font-medium text-gray-500 hover:text-gray-900"
                 >
-                  {item.name}
+                  {mainPage ? item.name : ''}
                 </Link>
               ))}
               <a
-                href="#"
-                className={`font-medium text-primary hover:text-secondary`}
+                href="../angebot"
+                className={`px-2 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-background hover:text-primary`}
               >
-                Call to action
+                {callToAction.text}
               </a>
             </div>
           </nav>
@@ -108,13 +112,13 @@ const Menu = () => {
                     to={item.href}
                     className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                   >
-                    {item.name}
+                    {mainPage ? item.name : ''}
                   </Link>
                 ))}
               </div>
               <a
                 href={callToAction.href}
-                className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
+                className={`block w-full px-2 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
               >
                 {callToAction.text}
               </a>

@@ -29,29 +29,23 @@ const Pricing = () => {
             <div
               className={`flex-1 bg-background text-gray-600 rounded-t rounded-b-none overflow-hidden shadow`}
             >
+              <div className="flex flex-col items-center justify-center">
+                <img
+                  className={`inline-block h-32 w-32`}
+                  src={firstPlan?.icon}
+                  alt={firstPlan?.icon}
+                />
+              </div>
               <div className={`p-8 text-3xl font-bold text-center border-b-4`}>
                 {firstPlan?.name}
               </div>
               <ul className={`w-full text-center text-sm`}>
                 {firstPlan?.features.map((feature) => (
-                  <li
-                    className={`border-b py-4`}
-                    key={`${firstPlan.name}-${feature}`}
-                  >
+                  <li className={`py-4`} key={`${firstPlan.name}-${feature}`}>
                     {feature}
                   </li>
                 ))}
               </ul>
-            </div>
-            <div
-              className={`flex-none mt-auto bg-background rounded-b rounded-t-none overflow-hidden shadow p-6`}
-            >
-              <div
-                className={`w-full pt-6 text-3xl text-gray-600 font-bold text-center`}
-              >
-                {firstPlan?.price}
-                <span className={`text-base`}> {firstPlan?.priceDetails}</span>
-              </div>
             </div>
           </div>
           <div
@@ -60,6 +54,13 @@ const Pricing = () => {
             <div
               className={`flex-1 bg-background rounded-t rounded-b-none overflow-hidden shadow`}
             >
+              <div className="flex flex-col items-center justify-center">
+                <img
+                  className={`inline-block h-32 w-32`}
+                  src={secondPlan?.icon}
+                  alt={secondPlan?.icon}
+                />
+              </div>
               <div className={`w-full p-8 text-3xl font-bold text-center`}>
                 {secondPlan?.name}
               </div>
@@ -68,22 +69,11 @@ const Pricing = () => {
               ></div>
               <ul className={`w-full text-center text-base font-bold`}>
                 {secondPlan?.features.map((feature) => (
-                  <li
-                    className={`border-b py-4`}
-                    key={`${secondPlan?.name}-${feature}`}
-                  >
+                  <li className={`py-4`} key={`${secondPlan?.name}-${feature}`}>
                     {feature}
                   </li>
                 ))}
               </ul>
-            </div>
-            <div
-              className={`flex-none mt-auto bg-background rounded-b rounded-t-none overflow-hidden shadow p-6`}
-            >
-              <div className={`w-full pt-6 text-4xl font-bold text-center`}>
-                {secondPlan?.price}
-                <span className={`text-base`}> {secondPlan?.priceDetails}</span>
-              </div>
             </div>
           </div>
           <div
@@ -92,29 +82,23 @@ const Pricing = () => {
             <div
               className={`flex-1 bg-background text-gray-600 rounded-t rounded-b-none overflow-hidden shadow`}
             >
+              <div className="flex flex-col items-center justify-center">
+                <img
+                  className={`inline-block h-32 w-32`}
+                  src={thirdPlan?.icon}
+                  alt={thirdPlan?.icon}
+                />
+              </div>
               <div className={`p-8 text-3xl font-bold text-center border-b-4`}>
                 {thirdPlan?.name}
               </div>
               <ul className={`w-full text-center text-sm`}>
                 {thirdPlan?.features.map((feature) => (
-                  <li
-                    className={`border-b py-4`}
-                    key={`${thirdPlan?.name}-${feature}`}
-                  >
+                  <li className={`py-4`} key={`${thirdPlan?.name}-${feature}`}>
                     {feature}
                   </li>
                 ))}
               </ul>
-            </div>
-            <div
-              className={`flex-none mt-auto bg-background rounded-b rounded-t-none overflow-hidden shadow p-6`}
-            >
-              <div
-                className={`w-full pt-6 text-3xl text-gray-600 font-bold text-center`}
-              >
-                {thirdPlan?.price}
-                <span className={`text-base`}> {thirdPlan?.priceDetails}</span>
-              </div>
             </div>
           </div>
         </div>
