@@ -4,12 +4,18 @@ import {
   createStyles,
   makeStyles,
   Typography,
-  Paper,
   Button,
+  TextField,
+  Box,
 } from '@material-ui/core';
+import SendIcon from '@mui/icons-material/Send';
+import CircularProgress from '@mui/material/CircularProgress';
+import FormControl from '@mui/material/FormControl';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
 import emailjs from 'emailjs-com';
 
-import CustomDropDown from './CustomDropDown';
 import CustomMultiTextField from './CustomMultiTextField';
 import CustomTextField from './CustomTextField';
 
@@ -20,16 +26,12 @@ const useStyles = makeStyles(() =>
       flexDirection: 'column',
     },
     container: {
-      backgroundColor: '#ffffff',
-      position: 'absolute',
-      top: '50%',
-      left: '50%',
-      transform: 'translate(-50%,-50%)',
+      backgroundColor: 'rgba(255, 241, 211, 0.2)',
+      borderRadius: '20px',
       padding: 30,
       textAlign: 'center',
       minWidth: 350,
-      maxHeight: 560,
-      overflow: 'scroll',
+      maxWidth: 550,
     },
     title: {
       margin: '0px 0 20px 0',
@@ -38,6 +40,7 @@ const useStyles = makeStyles(() =>
       margin: '20px 0',
       backgroundColor: '#FF914D',
       color: '#ffffff',
+      textTransform: 'none',
     },
   })
 );
@@ -48,44 +51,15 @@ type Values = {
   mail: string;
   phone: string;
   address: string;
+  address2: string;
   plz: string;
   location: string;
-  verbrauch: string;
-  width: string;
   message: string;
+  delivery: string;
+  strom: string;
+  wallbox: string;
+  speicher: string;
 };
-
-const verbrauch = [
-  {
-    value: '1 Personen (Ø 2500 kWh/Jahr)',
-    label: '1 Personen (Ø 2500 kWh/Jahr)',
-  },
-  {
-    value: '2 Personen (Ø 3200 kWh/Jahr)',
-    label: '2 Personen (Ø 3200 kWh/Jahr)',
-  },
-  {
-    value: '3 Personen (Ø 4000 kWh/Jahr)',
-    label: '3 Personen (Ø 4000 kWh/Jahr)',
-  },
-  {
-    value: '4 Personen (Ø 4500 kWh/Jahr)',
-    label: '4 Personen (Ø 4500 kWh/Jahr)',
-  },
-  {
-    value: '5 Personen (Ø 5500 kWh/Jahr)',
-    label: '5 Personen (Ø 5500 kWh/Jahr)',
-  },
-  { value: 'Mehr (Ø 5500+ kWh/Jahr)', label: 'Mehr (Ø 5500+ kWh/Jahr)' },
-];
-
-const width = [
-  { value: '25 - 50 m²', label: '25 - 50 m²' },
-  { value: '50 - 75 m²', label: '50 - 75 m²' },
-  { value: '75 - 100 m²', label: '75 - 100 m²' },
-  { value: 'Mehr', label: 'Mehr' },
-  { value: 'Ich weiß es nicht', label: 'Ich weiß es nicht' },
-];
 
 const Form = () => {
   const classes = useStyles();
@@ -95,19 +69,28 @@ const Form = () => {
     mail: '',
     phone: '',
     address: '',
+    address2: '',
     plz: '',
     location: '',
-    verbrauch: '',
-    width: '',
     message: '',
+    delivery: '',
+    strom: '',
+    wallbox: '',
+    speicher: '',
   });
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValues({ ...values, [event.target.name]: event.target.value });
   };
 
+  const [clicked, setClicked] = useState(false);
+  const [offerSent, setOfferSent] = useState(false);
+
   function handleSubmit(e: { preventDefault: () => void; target: any }) {
     e.preventDefault();
+
+    setClicked(true);
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
     emailjs
       .sendForm(
@@ -119,7 +102,7 @@ const Form = () => {
       .then(
         (result) => {
           console.log(result.text);
-          window.location.reload();
+          setOfferSent(true);
         },
         (error) => {
           console.log(error.text);
@@ -127,86 +110,251 @@ const Form = () => {
       );
   }
 
+  const [selectedValue, setSelectedValue] = React.useState('Sofort');
+
+  const handleChange2 = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSelectedValue(event.target.value);
+    setValues({ ...values, [event.target.name]: event.target.value });
+  };
+
+  const controlProps2 = (item: string) => ({
+    checked: selectedValue === item,
+    onChange: handleChange2,
+    value: item,
+    name: 'delivery',
+    inputProps: { 'aria-label': item },
+  });
+
   return (
-    <Paper className={classes.container}>
-      <Typography variant={'h5'} className={classes.title}>
-        Angebot einholen
-      </Typography>
-      <form onSubmit={handleSubmit} className={classes.form}>
-        <div>
-          <CustomTextField
-            changeHandler={handleChange}
-            label={'Vorname'}
-            name={'name1'}
-          />
-          <CustomTextField
-            changeHandler={handleChange}
-            label={'Nachname'}
-            name={'name2'}
-          />
-        </div>
-        <div>
-          <CustomTextField
-            changeHandler={handleChange}
-            label={'E-Mail'}
-            name={'mail'}
-          />
-          <CustomTextField
-            changeHandler={handleChange}
-            label={'Telefon'}
-            name={'phone'}
-          />
-        </div>
-        <div>
-          <CustomTextField
-            changeHandler={handleChange}
-            label={'Addresszeile'}
-            name={'address'}
-          />
-          <CustomTextField
-            changeHandler={handleChange}
-            label={'PLZ'}
-            name={'plz'}
-          />
-          <CustomTextField
-            changeHandler={handleChange}
-            label={'Ort'}
-            name={'location'}
-          />
-        </div>
-        <CustomDropDown
-          label={'Personen'}
-          name={'verbrauch'}
-          changeHandler={handleChange}
-          values={verbrauch}
-          currentValue={values.verbrauch}
-        />
-        <CustomDropDown
-          label={'Dachfläche'}
-          name={'width'}
-          changeHandler={handleChange}
-          values={width}
-          currentValue={values.width}
-        />
-        <CustomMultiTextField
-          changeHandler={handleChange}
-          label={'Ihre Nachricht'}
-          name={'message'}
-        />
-        <p className="text-xs">
-          Mit dem Absenden dieses Formulars erklären Sie sich damit
-          einverstanden, dass Ihre Daten, die im Rahmen dieser Kontaktaufnahme
-          erhoben werden durch Solarwelt Lippe gespeichert werden.
-        </p>
-        <Button
-          type={'submit'}
-          variant={'contained'}
-          className={classes.button}
-        >
-          Senden
-        </Button>
-      </form>
-    </Paper>
+    <>
+      <Box className={classes.container}>
+        {clicked ? (
+          <>
+            {offerSent ? (
+              <Typography variant={'h5'} className={classes.title}>
+                Vielen Dank! Ihre Anfrage wird schnellstmöglich bearbeitet.
+              </Typography>
+            ) : (
+              <>
+                <CircularProgress
+                  size="6rem"
+                  sx={{
+                    color: '#FFBD59',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    textAlign: 'center',
+                    lineHeight: '1',
+                    width: '300px',
+                    height: '40px',
+                    marginLeft: 12,
+                  }}
+                ></CircularProgress>
+                <Typography variant={'h5'}>Anfrage wird gesendet!</Typography>
+              </>
+            )}
+          </>
+        ) : (
+          <>
+            <Typography variant={'h5'} className={classes.title}>
+              Deine Kontaktdaten
+            </Typography>
+            <form onSubmit={handleSubmit} className={classes.form}>
+              <TextField
+                className="dummy"
+                name="haushalt"
+                value={localStorage.getItem('haushalt')!}
+              ></TextField>
+              <TextField
+                className="dummy"
+                name="dachform"
+                value={localStorage.getItem('dachform')!}
+              ></TextField>
+              <TextField
+                className="dummy"
+                name="wallbox"
+                value={localStorage.getItem('wallbox')!}
+              ></TextField>
+              <TextField
+                className="dummy"
+                name="speicher"
+                value={localStorage.getItem('speicher')!}
+              ></TextField>
+              <TextField
+                className="dummy"
+                name="verbrauch"
+                value={localStorage.getItem('verbrauch')!}
+              ></TextField>
+              <TextField
+                className="dummy"
+                name="eigenheim"
+                value={localStorage.getItem('eigenheim')!}
+              ></TextField>
+              <div>
+                <CustomTextField
+                  changeHandler={handleChange}
+                  label={'Vorname'}
+                  name={'name1'}
+                  value={''}
+                />
+                <CustomTextField
+                  changeHandler={handleChange}
+                  label={'Nachname'}
+                  name={'name2'}
+                  value={''}
+                />
+              </div>
+              <div>
+                <CustomTextField
+                  changeHandler={handleChange}
+                  label={'E-Mail'}
+                  name={'mail'}
+                  value={''}
+                />
+                <CustomTextField
+                  changeHandler={handleChange}
+                  label={'Telefon'}
+                  name={'phone'}
+                  value={''}
+                />
+              </div>
+              <div>
+                <CustomTextField
+                  changeHandler={handleChange}
+                  label={'Straße'}
+                  name={'address'}
+                  value={''}
+                />
+                <CustomTextField
+                  changeHandler={handleChange}
+                  label={'Hausnummer'}
+                  name={'address2'}
+                  value={''}
+                />
+                <CustomTextField
+                  changeHandler={handleChange}
+                  label={'PLZ'}
+                  name={'plz'}
+                  value={localStorage.getItem('plz')!}
+                />
+                <CustomTextField
+                  changeHandler={handleChange}
+                  label={'Ort'}
+                  name={'location'}
+                  value={''}
+                />
+              </div>
+
+              <div>
+                <CustomTextField
+                  changeHandler={handleChange}
+                  label={'Jährlicher Stromverbrauch in kWh'}
+                  name={'strom'}
+                  value={''}
+                />
+              </div>
+
+              <div className="mt-2">
+                <Typography>
+                  Wann soll Ihre PV-Anlage installiert werden?
+                </Typography>
+              </div>
+              <div className="mb-2">
+                <FormControl>
+                  <RadioGroup name="row-radio-buttons-group">
+                    <FormControlLabel
+                      value="now"
+                      control={
+                        <Radio
+                          {...controlProps2('Schnellstmöglich')}
+                          size="small"
+                          sx={{
+                            color: '#696969',
+                            '&.Mui-checked': {
+                              color: '#FFBD59',
+                            },
+                          }}
+                        />
+                      }
+                      label="Schnellstmöglich"
+                      sx={{
+                        color: '#696969',
+                        '&.Mui-checked': {
+                          color: '#FFBD59',
+                        },
+                      }}
+                    />
+                    <FormControlLabel
+                      value="soon"
+                      control={
+                        <Radio
+                          {...controlProps2('1-3 Monate')}
+                          size="small"
+                          sx={{
+                            color: '#696969',
+                            '&.Mui-checked': {
+                              color: '#FFBD59',
+                            },
+                          }}
+                        />
+                      }
+                      label="1-3 Monate"
+                      sx={{
+                        color: '#696969',
+                        '&.Mui-checked': {
+                          color: '#FFBD59',
+                        },
+                      }}
+                    />
+                    <FormControlLabel
+                      value="late"
+                      control={
+                        <Radio
+                          {...controlProps2('Nach 3 Monaten')}
+                          size="small"
+                          sx={{
+                            color: '#696969',
+                            '&.Mui-checked': {
+                              color: '#FFBD59',
+                            },
+                          }}
+                        />
+                      }
+                      label="Nach 3 Monaten"
+                      sx={{
+                        color: '#696969',
+                        '&.Mui-checked': {
+                          color: '#FFBD59',
+                        },
+                      }}
+                    />
+                  </RadioGroup>
+                </FormControl>
+              </div>
+              <CustomMultiTextField
+                changeHandler={handleChange}
+                label={'Ihre Nachricht'}
+                name={'message'}
+              />
+              <p className="text-xs">
+                Mit dem Absenden dieses Formulars erklären Sie sich damit
+                einverstanden, dass Ihre Daten, die im Rahmen dieser
+                Kontaktaufnahme erhoben werden durch B & B Solarwelt-Lippe
+                gespeichert werden.
+              </p>
+              <Button
+                type={'submit'}
+                variant={'contained'}
+                className={classes.button}
+                title="Unverbindliches Angebot einholen"
+                endIcon={<SendIcon />}
+              >
+                Unverbindliches Angebot einholen
+              </Button>
+            </form>
+          </>
+        )}
+      </Box>
+    </>
   );
 };
 

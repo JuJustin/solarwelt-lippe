@@ -5,6 +5,7 @@ import { TextField, withStyles } from '@material-ui/core';
 type CustomTextFieldProps = {
   label: string;
   name: string;
+  value: string;
   changeHandler: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
@@ -39,6 +40,8 @@ const CustomTextField = (props: CustomTextFieldProps) => {
       variant={'outlined'} // enables special material-ui styling
       size={'small'}
       margin={'dense'}
+      defaultValue={props.value}
+      fullWidth
       required
     />
   );

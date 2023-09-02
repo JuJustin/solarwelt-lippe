@@ -7,7 +7,7 @@ import WaveObj from '../utils/wave';
 const Wave: FC = () => {
   const { context } = useCanvasContext();
   const { width } = useResponsiveSize();
-  const height = 600;
+  const height = 300;
   let frequency = 0.013;
   const waves = {
     frontWave: new WaveObj([0.0211, 0.028, 0.015], 'rgb(255, 222, 89, 0.1)'),

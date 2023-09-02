@@ -4,7 +4,7 @@ import config from '../config/index.json';
 
 const About = () => {
   const { company, about } = config;
-  const { logo, phone, mail, name: companyName } = company;
+  const { logo, mail, name: companyName } = company;
   const { socialMedia, sections } = about;
 
   return (
@@ -22,24 +22,28 @@ const About = () => {
           </h5>
         </div>
         <ul>
-          <a
-            className="flex flex-wrap items-center justify-center mb-2"
-            href={'mailto:info@solarwelt-lippe.de?subject=Anfrage Solaranlage'}
-          >
-            <img
-              src={mail}
-              alt={'info@solarwelt-lippe.de'}
-              className="w-5 h-5 mr-1"
-            />
-            <h1>info@solarwelt-lippe.de</h1>
-          </a>
-          <a
-            className="flex flex-wrap items-center justify-center"
-            href={'tel:99999999'}
-          >
-            <img src={phone} alt={'9999/99999'} className="w-5 h-5 mr-1" />
-            <h1>9999/99999</h1>
-          </a>
+          <li>
+            <a
+              className="flex flex-wrap items-center justify-center mb-2"
+              href={
+                'mailto:info@solarwelt-lippe.de?subject=Anfrage Photovoltaikanlage'
+              }
+            >
+              <img src={mail} alt={'Unsere E-Mail'} className="w-5 h-5 mr-1" />
+              <h1>info@solarwelt-lippe.de</h1>
+            </a>
+          </li>
+          <li>
+            <a
+              className="flex flex-wrap items-center justify-center"
+              href={'tel:???'}
+            >
+              {/** add when phone number available 
+              <img src={phone} alt={'phone number'} className="w-5 h-5 mr-1" />
+              <h1>???</h1>
+              */}
+            </a>
+          </li>
         </ul>
         <span className="h-0.5 w-full bg-gray-200 lg:w-1/1 mt-5"></span>
         <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-4 h-12">
@@ -76,21 +80,6 @@ const About = () => {
             </svg>
           </a>
           <a
-            aria-label="facebook"
-            href={socialMedia.facebook}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
-            </svg>
-          </a>
-          <a
             aria-label="instagram"
             href={socialMedia.instagram}
             target="_blank"
@@ -114,7 +103,7 @@ const About = () => {
         </div>
         <div className="flex items-center mt-6">
           <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">
-            &copy; {new Date().getFullYear()} Solarwelt Lippe
+            &copy; {new Date().getFullYear()} B&B Solarwelt-Lippe
           </p>
         </div>
       </div>

@@ -1,9 +1,19 @@
 {
   "company": {
-    "name": "Solarwelt Lippe",
+    "name": "Solarwelt-Lippe",
+    "leadPicture": "/assets/images/in.jpg",
     "logo": "/assets/images/logo.svg",
+    "beratung": "/assets/images/beratung.svg",
     "mail": "/assets/images/mail.svg",
-    "phone": "/assets/images/phone.svg"
+    "phone": "/assets/images/phone.svg",
+    "mwst": "/assets/images/mwst.svg",
+    "iconBeratung": "/assets/images/iconBeratung.svg",
+    "iconPlanung": "/assets/images/iconPlanung.svg",
+    "iconMontage": "/assets/images/iconMontage.svg",
+    "iconAnmeldung": "/assets/images/iconAnmeldung.svg",
+    "iconSupport": "/assets/images/iconSupport.svg",
+    "kostensparen": "/assets/images/kostensparen.svg",
+    "logoTop": "/assets/images/logoTop.svg"
   },
   "navigation": [
     {
@@ -21,29 +31,29 @@
     }
   ],
   "callToAction": {
-    "text": "Angebot einholen",
+    "text": "Verfügbarkeit prüfen",
     "href": "../angebot"
   },
   "mainHero": {
     "title": "Sonnenenergie",
     "subtitle": "sauber, effizient, grenzenlos.",
-    "description": "Wir sind stolz darauf, als zuverlässiger Partner im Solaranlagenbereich bekannte und geschätzte Standards in Bezug auf Qualität, Leistung und Kundenzufriedenheit zu setzen.",
+    "description": "Wir sind stolz darauf, als zuverlässiger Partner im Photovoltaikanlagenbereich bekannte und geschätzte Standards in Bezug auf Qualität, Leistung und Kundenzufriedenheit zu setzen.",
     "img": "/assets/images/mainPicture.jpg",
     "primaryAction": {
-      "text": "Angebot einholen",
+      "text": "Kostenloses Angebot einholen",
       "href": "../angebot"
     },
     "secondaryAction": {
       "text": "Kontaktieren",
-      "href": "mailto:info@solarwelt-lippe.de?subject=Anfrage Solaranlage"
+      "href": "mailto:info@solarwelt-lippe.de?subject=Anfrage Photovoltaikanlage"
     }
   },
   "product": {
-    "title": "Solarwelt Lippe",
+    "title": "Solarwelt-Lippe",
     "items": [
       {
         "title": "Zusammen Ihre Zukunft gestalten",
-        "description": "Unser Solaranlagenbetrieb legt großen Wert auf das Vertrauen unserer Kunden. Von der Beratung bis zur Installation bieten wir ehrliche und transparente Kommunikation, hochwertige Produkte und professionelle Dienstleistungen. Unsere Solarmodule stammen von vertrauenswürdigen Herstellern, und unsere erfahrenen Techniker gewährleisten eine sorgfältige Installation gemäß branchenüblichen Standards.",
+        "description": "Unser Photovoltaikanlagenbetrieb legt großen Wert auf das Vertrauen unserer Kunden. Von der Beratung bis zur Installation bieten wir ehrliche und transparente Kommunikation, hochwertige Produkte und professionelle Dienstleistungen. Unsere Solarmodule stammen von vertrauenswürdigen Herstellern, und unsere erfahrenen Techniker gewährleisten eine sorgfältige Installation gemäß branchenüblichen Standards.",
         "description2": "Wir bieten umfassende Garantien und sind stets für Fragen und Anliegen erreichbar. Unsere langfristige Ziel ist es, Kundenbeziehungen aufzubauen und Kundenzufriedenheit zu gewährleisten.",
         "img": "/assets/images/solarbetrieb.png"
       }
@@ -51,12 +61,12 @@
   },
   "features": {
     "title": "Lösungen",
-    "subtitle": "Qualität und Leistung: Unser Solaranlagenbetrieb setzt Maßstäbe",
-    "description": "Unser Solaranlagenbetrieb steht für höchste Qualität und erstklassige Leistung. Wir liefern zuverlässige und effiziente Solarsysteme und bieten exzellenten Kundenservice, um nachhaltige Lösungen für unsere Kunden zu gewährleisten.",
+    "subtitle": "Qualität und Leistung: Unser Photovoltaikanlagen Betrieb setzt Maßstäbe",
+    "description": "Unser Photovoltaikanlagenbetrieb steht für höchste Qualität und erstklassige Leistung. Wir liefern zuverlässige und effiziente Solarsysteme und bieten exzellenten Kundenservice, um nachhaltige Lösungen für unsere Kunden zu gewährleisten.",
     "items": [
       {
         "name": "Beratung und Bedarfsanalyse",
-        "description": "ine gründliche Bedarfsanalyse ermöglicht es, individuelle Anforderungen der Kunden zu verstehen und maßgeschneiderte Solarlösungen anzubieten.",
+        "description": "Eine gründliche Bedarfsanalyse ermöglicht es, individuelle Anforderungen der Kunden zu verstehen und maßgeschneiderte Solarlösungen anzubieten.",
         "icon": "/assets/images/consulting.svg"
       },
       {
@@ -71,7 +81,7 @@
       },
       {
         "name": "Garantie und Kundenservice",
-        "description": "Ein erfolgreicher Solaranlagenvertrieb umfasst eine umfassende Garantie und einen zuverlässigen Kundenservice. Durch klare Garantiebedingungen und Unterstützung bei Wartung und Reparaturen wird den Kunden ein langfristiger und sorgenfreier Betrieb ihrer Solaranlage gewährleistet.",
+        "description": "Ein erfolgreicher Photovoltaikanlagenvertrieb umfasst eine umfassende Garantie und einen zuverlässigen Kundenservice. Durch klare Garantiebedingungen und Unterstützung bei Wartung und Reparaturen wird den Kunden ein langfristiger und sorgenfreier Betrieb ihrer Solaranlage gewährleistet.",
         "icon": "/assets/images/warranty.svg"
       }
     ]
@@ -85,7 +95,7 @@
         "price": "0",
         "priceDetails": "0",
         "features": [
-          "Solaranlagen ermöglichen eine saubere und nachhaltige Energieerzeugung, da sie Sonnenlicht in Strom umwandeln und dabei keine schädlichen Emissionen freisetzen."
+          "Photovoltaikanlagen ermöglichen eine saubere und nachhaltige Energieerzeugung, da sie Sonnenlicht in Strom umwandeln und dabei keine schädlichen Emissionen freisetzen."
         ]
       },
       {
@@ -94,7 +104,7 @@
         "price": "0",
         "priceDetails": "0",
         "features": [
-          "Solaranlagen ermöglichen langfristige Kosteneinsparungen, da sie den Bedarf an teurem Netzstrom reduzieren und die Stromrechnungen senken."
+          "Photovoltaikanlagen ermöglichen langfristige Kosteneinsparungen, da sie den Bedarf an teurem Netzstrom reduzieren und die Stromrechnungen senken."
         ]
       },
       {
@@ -122,9 +132,8 @@
       }
     ],
     "socialMedia": {
-      "instagram": "https://halfwork.de",
-      "facebook": "https://halfwork.de",
-      "whatsapp": "https://halfwork.de"
+      "instagram": "https://www.instagram.com/solarwelt_lippe/",
+      "whatsapp": "https://solarwelt-lippe.de"
     }
   }
 }

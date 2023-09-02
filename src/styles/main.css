@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 
+
 :root {
   --color-primary: #FFDE59;
   --color-secondary: #FFDE59;
   --color-tertiaty: #99a0a3;
+  scroll-behavior: smooth;
 }
 
 a { 
@@ -17,8 +19,6 @@ a:hover {
   @apply border-b-2 border-yellow-700;
 }
 
-
-
 .content p {
   @apply my-6;
 }
@@ -26,3 +26,108 @@ a:hover {
 .content ul {
   @apply my-6;
 }
+
+.entryIcon {
+  width: 80px;
+  height: 80px;
+}
+
+.mwstBox {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 300px;
+  height: 270px;
+  background-color: rgb(255, 189, 89, 0.7);
+  border-radius: 5px;
+}
+
+.mwstBoxTitle {
+  margin-bottom: -105px;
+  margin-left: 65px;
+  z-index: 1;
+  width: 250px;
+  height: 40px;
+  background-color: rgb(139, 0, 0);
+}
+
+.mwstBoxTitleText {
+  color: white;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.mwstText{
+  color: rgb(139, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mwstText2 {
+  color: black;
+  margin-top: 7px;
+  font-size: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.BeratungTitle1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.BeratungTitle2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top:15px;
+  margin-bottom:15px;
+  text-align: left;
+}
+
+.BeratungText {
+  font-size: 14px;
+  text-align: left;
+}
+
+.BeratungDiv {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.fragenBox {
+  width: 100%;
+  background-color:rgb(255, 189, 89, 0.5);
+}
+
+.FragenTitle1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.frageDiv {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding:5px; /* Some padding */
+  border-radius: 45px; /* Rounded corners */
+}
+
+#myBtn:hover {
+  border: solid rgb(255, 189, 89);
+}
+

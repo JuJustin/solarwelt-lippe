@@ -41,7 +41,7 @@ const CustomMultiTextField = (props: CustomTextFieldProps) => {
       margin={'dense'}
       multiline
       rows={2}
-      maxRows={4}
+      maxRows={6}
       required
     />
   );

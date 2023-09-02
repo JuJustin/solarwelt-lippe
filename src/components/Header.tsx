@@ -48,7 +48,7 @@ const Menu = ({ mainPage }: { mainPage: boolean }) => {
                 </div>
               </div>
             </div>
-            <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+            <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-6">
               {navigation.map((item) => (
                 <Link
                   spy={true}
@@ -57,6 +57,7 @@ const Menu = ({ mainPage }: { mainPage: boolean }) => {
                   duration={1000}
                   key={item.name}
                   to={item.href}
+                  href={item.href}
                   className="font-medium text-gray-500 hover:text-gray-900"
                 >
                   {mainPage ? item.name : ''}
