@@ -68,20 +68,19 @@ const App = () => {
             <br />
             <b>Impressum Angaben gemäß § 5 TMG</b>
             <br />
-            B&B Solarwelt-Lippe UG (haftungsbeschränkt) <br />
+            B & B Solarwelt-Lippe UG (haftungsbeschränkt) <br />
             Drosselweg 3 <br />
             32816 Schieder-Schwalenberg <br />
             <br />
             <b>Vertreten durch:</b> <br />
-            ?? <br />
-            ?? <br /> <br />
+            Ralph Bich <br />
+            Justin Bich <br /> <br />
             <b>Kontakt:</b> <br />
-            Telefon: ?? <br />
             E-Mail: info@solarwelt-lippe.de <br />
             <br />
             <b>Eintragung im Handelsregister</b> <br />
             Registergericht: Lemgo <br />
-            Registernummer: HRB ??????
+            Registernummer: HRB 11073
           </p>
         </div>
       </div>

@@ -7,10 +7,15 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={AppConfig.locale}>
-        <Head />
+        <Head></Head>
         <body>
           <Main />
           <NextScript />
+          <noscript
+            dangerouslySetInnerHTML={{
+              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=G-41Q1VPY9FG" height="0" width="0" style="display: none; visibility: hidden;" />`,
+            }}
+          />
         </body>
       </Html>
     );

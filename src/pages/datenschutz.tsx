@@ -177,6 +177,78 @@ const App = () => {
             kontaktieren Sie uns per E-Mail an info@solarwelt-lippe.de oder per
             Post an die unten genannte Adresse: Drosselweg 3,
             Schieder-Schwalenberg, Nordrhein-Westfalen, 32816, Deutschland
+            <br />
+            <br />
+            Hubspot CRM
+            <br />
+            1. Erhebung und Verwendung von personenbezogenen Daten Wir verwenden
+            das HubSpot CRM-System, um Informationen über Besucher unserer
+            Website zu sammeln und zu speichern. Hierbei handelt es sich um
+            Informationen, die Sie uns freiwillig zur Verfügung stellen, wie
+            z.B. Name, E-Mail-Adresse, Telefonnummer und andere
+            Kontaktinformationen. Diese Informationen werden dazu verwendet, um:
+            Mit Ihnen in Kontakt zu treten und auf Ihre Anfragen zu antworten.
+            Ihnen relevante Informationen und Updates zu unseren Produkten und
+            Dienstleistungen zuzusenden. Statistiken und Analysen über die
+            Nutzung unserer Website und unserer Dienstleistungen zu erstellen.
+            2. Schutz Ihrer Daten Wir nehmen den Schutz Ihrer personenbezogenen
+            Daten ernst. Wir haben angemessene Sicherheitsmaßnahmen ergriffen,
+            um Ihre Daten vor unbefugtem Zugriff, Verlust, Missbrauch oder
+            Offenlegung zu schützen. Unser Team hat Zugriff auf Ihre Daten und
+            ist geschult, um sicherzustellen, dass sie sicher behandelt werden.
+            3. Weitergabe von Daten an Dritte Wir geben Ihre personenbezogenen
+            Daten nicht ohne Ihre ausdrückliche Zustimmung an Dritte weiter, es
+            sei denn, dies ist gesetzlich vorgeschrieben. 4. Cookies und
+            Tracking-Technologien Unsere Website verwendet Cookies und andere
+            Tracking-Technologien, um die Nutzung unserer Website zu analysieren
+            und zu verbessern. Sie können die Verwendung von Cookies in Ihren
+            Browsereinstellungen deaktivieren, wenn Sie dies wünschen. 5. Ihre
+            Rechte Sie haben das Recht, auf Ihre personenbezogenen Daten
+            zuzugreifen, sie zu korrigieren, zu aktualisieren oder zu löschen.
+            Wenn Sie Fragen zu Ihren Daten oder zu dieser Datenschutzerklärung
+            haben, können Sie sich unter info@solarwelt-lippe.de an uns wenden.
+            6. Aktualisierungen dieser Datenschutzerklärung Wir behalten uns das
+            Recht vor, diese Datenschutzerklärung jederzeit zu aktualisieren, um
+            Änderungen in unseren Datenschutzpraktiken widerzuspiegeln. Bitte
+            überprüfen Sie regelmäßig unsere Datenschutzerklärung auf
+            Aktualisierungen. Durch die Nutzung unserer Website und das HubSpot
+            CRM-System erklären Sie sich mit dieser Datenschutzerklärung
+            einverstanden.
+            <br />
+            <br />
+            Chatbots
+            <br />
+            1. Datenerhebung und Verwendung durch den Chatbot Unser Chatbot ist
+            dazu konzipiert, auf Ihre Anfragen zu reagieren und Ihnen bei
+            verschiedenen Anliegen zu helfen. Dabei kann der Chatbot
+            personenbezogene Daten wie Name, E-Mail-Adresse, Telefonnummer und
+            andere relevante Informationen sammeln, um: Ihre Anfragen effizient
+            zu bearbeiten. Sie mit relevanten Informationen und Antworten zu
+            versorgen. Unsere Dienstleistungen und Produkte zu verbessern. 2.
+            Schutz Ihrer Daten Wir nehmen den Schutz Ihrer personenbezogenen
+            Daten ernst. Wir haben angemessene Sicherheitsmaßnahmen ergriffen,
+            um Ihre Daten vor unbefugtem Zugriff, Verlust, Missbrauch oder
+            Offenlegung zu schützen. Unser Team hat Zugriff auf die Daten, die
+            im Rahmen des Chatbot-Betriebs gesammelt werden, und ist geschult,
+            um sicherzustellen, dass sie sicher behandelt werden. 3. Weitergabe
+            von Daten an Dritte Wir geben Ihre personenbezogenen Daten nicht
+            ohne Ihre ausdrückliche Zustimmung an Dritte weiter, es sei denn,
+            dies ist gesetzlich vorgeschrieben. 4. Cookies und
+            Tracking-Technologien Unser Chatbot kann Cookies und andere
+            Tracking-Technologien verwenden, um die Nutzung unserer Website und
+            den Chatbot-Betrieb zu analysieren und zu verbessern. Sie können die
+            Verwendung von Cookies in Ihren Browsereinstellungen deaktivieren,
+            wenn Sie dies wünschen. 5. Ihre Rechte Sie haben das Recht, auf Ihre
+            personenbezogenen Daten zuzugreifen, sie zu korrigieren, zu
+            aktualisieren oder zu löschen. Wenn Sie Fragen zu Ihren Daten oder
+            zu dieser Datenschutzerklärung haben, können Sie sich unter
+            info@solarwelt-lippe.de an uns wenden. 6. Aktualisierungen dieser
+            Datenschutzerklärung Wir behalten uns das Recht vor, diese
+            Datenschutzerklärung jederzeit zu aktualisieren, um Änderungen in
+            unseren Datenschutzpraktiken widerzuspiegeln. Bitte überprüfen Sie
+            regelmäßig unsere Datenschutzerklärung auf Aktualisierungen. Durch
+            die Nutzung unseres Chatbots erklären Sie sich mit dieser
+            Datenschutzerklärung einverstanden.
           </p>
         </div>
       </div>

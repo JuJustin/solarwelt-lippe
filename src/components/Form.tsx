@@ -85,11 +85,13 @@ const Form = () => {
 
   const [clicked, setClicked] = useState(false);
   const [offerSent, setOfferSent] = useState(false);
+  const [disableFields, setDisableFields] = useState(true);
 
   function handleSubmit(e: { preventDefault: () => void; target: any }) {
     e.preventDefault();
 
     setClicked(true);
+    setDisableFields(false); // dummy
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
     emailjs
@@ -110,7 +112,7 @@ const Form = () => {
       );
   }
 
-  const [selectedValue, setSelectedValue] = React.useState('Sofort');
+  const [selectedValue, setSelectedValue] = React.useState('Schnellstmöglich');
 
   const handleChange2 = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedValue(event.target.value);
@@ -189,7 +191,12 @@ const Form = () => {
                 name="eigenheim"
                 value={localStorage.getItem('eigenheim')!}
               ></TextField>
-              <div>
+              <TextField
+                className="dummy"
+                name="plz"
+                value={localStorage.getItem('plz')!}
+              ></TextField>
+              <div className="divOneRow">
                 <CustomTextField
                   changeHandler={handleChange}
                   label={'Vorname'}
@@ -210,126 +217,160 @@ const Form = () => {
                   name={'mail'}
                   value={''}
                 />
-                <CustomTextField
-                  changeHandler={handleChange}
-                  label={'Telefon'}
-                  name={'phone'}
-                  value={''}
-                />
+                {disableFields ? (
+                  <div />
+                ) : (
+                  <CustomTextField
+                    changeHandler={handleChange}
+                    label={'Telefon'}
+                    name={'phone'}
+                    value={''}
+                  />
+                )}
               </div>
-              <div>
-                <CustomTextField
-                  changeHandler={handleChange}
-                  label={'Straße'}
-                  name={'address'}
-                  value={''}
-                />
-                <CustomTextField
-                  changeHandler={handleChange}
-                  label={'Hausnummer'}
-                  name={'address2'}
-                  value={''}
-                />
-                <CustomTextField
-                  changeHandler={handleChange}
-                  label={'PLZ'}
-                  name={'plz'}
-                  value={localStorage.getItem('plz')!}
-                />
-                <CustomTextField
-                  changeHandler={handleChange}
-                  label={'Ort'}
-                  name={'location'}
-                  value={''}
-                />
-              </div>
+              {disableFields ? (
+                <div />
+              ) : (
+                <>
+                  <div className="divOneRow">
+                    <div className="flex-2">
+                      <CustomTextField
+                        changeHandler={handleChange}
+                        label={'Straße'}
+                        name={'address'}
+                        value={''}
+                      />
+                    </div>
+                    <div className="flex-1.3">
+                      <CustomTextField
+                        changeHandler={handleChange}
+                        label={'Hausnummer'}
+                        name={'address2'}
+                        value={''}
+                      />
+                    </div>
+                  </div>
+                  <div className="divOneRow">
+                    <div className="flex-1">
+                      <CustomTextField
+                        changeHandler={handleChange}
+                        label={'PLZ'}
+                        name={'plz'}
+                        value={localStorage.getItem('plz')!}
+                      />
+                    </div>
+                    <div className="flex-3">
+                      <CustomTextField
+                        changeHandler={handleChange}
+                        label={'Ort'}
+                        name={'location'}
+                        value={''}
+                      />
+                    </div>
+                  </div>
+                </>
+              )}
 
-              <div>
-                <CustomTextField
-                  changeHandler={handleChange}
-                  label={'Jährlicher Stromverbrauch in kWh'}
-                  name={'strom'}
-                  value={''}
-                />
-              </div>
+              {disableFields ? (
+                <div />
+              ) : (
+                <div>
+                  <CustomTextField
+                    changeHandler={handleChange}
+                    label={'Jährlicher Stromverbrauch in kWh'}
+                    name={'strom'}
+                    value={''}
+                  />
+                </div>
+              )}
 
-              <div className="mt-2">
-                <Typography>
-                  Wann soll Ihre PV-Anlage installiert werden?
-                </Typography>
-              </div>
-              <div className="mb-2">
-                <FormControl>
-                  <RadioGroup name="row-radio-buttons-group">
-                    <FormControlLabel
-                      value="now"
-                      control={
-                        <Radio
-                          {...controlProps2('Schnellstmöglich')}
-                          size="small"
-                          sx={{
-                            color: '#696969',
-                            '&.Mui-checked': {
-                              color: '#FFBD59',
-                            },
-                          }}
-                        />
-                      }
-                      label="Schnellstmöglich"
-                      sx={{
-                        color: '#696969',
-                        '&.Mui-checked': {
-                          color: '#FFBD59',
-                        },
-                      }}
-                    />
-                    <FormControlLabel
-                      value="soon"
-                      control={
-                        <Radio
-                          {...controlProps2('1-3 Monate')}
-                          size="small"
-                          sx={{
-                            color: '#696969',
-                            '&.Mui-checked': {
-                              color: '#FFBD59',
-                            },
-                          }}
-                        />
-                      }
-                      label="1-3 Monate"
-                      sx={{
-                        color: '#696969',
-                        '&.Mui-checked': {
-                          color: '#FFBD59',
-                        },
-                      }}
-                    />
-                    <FormControlLabel
-                      value="late"
-                      control={
-                        <Radio
-                          {...controlProps2('Nach 3 Monaten')}
-                          size="small"
-                          sx={{
-                            color: '#696969',
-                            '&.Mui-checked': {
-                              color: '#FFBD59',
-                            },
-                          }}
-                        />
-                      }
-                      label="Nach 3 Monaten"
-                      sx={{
-                        color: '#696969',
-                        '&.Mui-checked': {
-                          color: '#FFBD59',
-                        },
-                      }}
-                    />
-                  </RadioGroup>
-                </FormControl>
-              </div>
+              {disableFields ? (
+                <div />
+              ) : (
+                <div className="mt-2">
+                  <Typography>
+                    Wann soll Ihre PV-Anlage installiert werden?
+                  </Typography>
+                </div>
+              )}
+
+              {disableFields ? (
+                <div />
+              ) : (
+                <div className="mb-2">
+                  <FormControl>
+                    <RadioGroup name="row-radio-buttons-group">
+                      <FormControlLabel
+                        value="now"
+                        control={
+                          <Radio
+                            {...controlProps2('Schnellstmöglich')}
+                            size="small"
+                            sx={{
+                              color: '#696969',
+                              '&.Mui-checked': {
+                                color: '#FFBD59',
+                              },
+                            }}
+                          />
+                        }
+                        label="Schnellstmöglich"
+                        sx={{
+                          color: '#696969',
+                          '&.Mui-checked': {
+                            color: '#FFBD59',
+                          },
+                        }}
+                      />
+                      <FormControlLabel
+                        value="soon"
+                        control={
+                          <Radio
+                            {...controlProps2('1-3 Monate')}
+                            size="small"
+                            sx={{
+                              color: '#696969',
+                              '&.Mui-checked': {
+                                color: '#FFBD59',
+                              },
+                            }}
+                          />
+                        }
+                        label="1-3 Monate"
+                        sx={{
+                          color: '#696969',
+                          '&.Mui-checked': {
+                            color: '#FFBD59',
+                          },
+                        }}
+                      />
+                      <FormControlLabel
+                        value="late"
+                        control={
+                          <Radio
+                            {...controlProps2('Nach 3 Monaten')}
+                            size="small"
+                            sx={{
+                              color: '#696969',
+                              '&.Mui-checked': {
+                                color: '#FFBD59',
+                              },
+                            }}
+                          />
+                        }
+                        label="Nach 3 Monaten"
+                        sx={{
+                          color: '#696969',
+                          '&.Mui-checked': {
+                            color: '#FFBD59',
+                          },
+                        }}
+                      />
+                    </RadioGroup>
+                  </FormControl>
+                </div>
+              )}
+
               <CustomMultiTextField
                 changeHandler={handleChange}
                 label={'Ihre Nachricht'}

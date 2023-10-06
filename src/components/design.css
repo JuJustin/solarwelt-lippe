@@ -80,3 +80,16 @@
   width: 0px;
   height: 0px;
 }
+
+.divOneRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexOne {
+  flex: 1;
+}
+
+.flexTwo {
+  flex: 2;
+}

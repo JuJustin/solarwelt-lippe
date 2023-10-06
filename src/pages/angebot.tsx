@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Head from 'next/head';
+import Script from 'next/script';
 
 import About from '../components/About';
 import Analytics from '../components/Analytics';
@@ -11,47 +12,26 @@ import config from '../config/index.json';
 
 const App = () => {
   const { company } = config;
-  const { name: companyName, logo, logoTop } = company;
-
-  // Get the button:
-
-  function scrollFunction() {
-    const mybutton = document.getElementById('myBtn');
-
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      if (mybutton !== null) {
-        mybutton.style.display = 'block';
-      }
-    } else if (mybutton !== null) {
-      mybutton.style.display = 'none';
-    }
-  }
-
-  // When the user scrolls down 20px from the top of the document, show the button
-  if (typeof window !== 'undefined') {
-    window.onscroll = function scroller() {
-      scrollFunction();
-    };
-  }
-
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    const mybutton = document.getElementById('myBtn');
-
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    if (mybutton !== null) {
-      mybutton.style.scrollBehavior = 'smooth';
-    }
-  }
+  const { name: companyName, logo } = company;
 
   return (
     <div
       className={`websiteBackground bg-background grid gap-y-2  overflow-hidden`}
     >
+      <Script
+        id="Cookiebot"
+        src="https://consent.cookiebot.com/uc.js"
+        data-cbid="22485892-af19-4178-b416-a380fa7b170e"
+        data-blockingmode="auto"
+        type="text/javascript"
+      ></Script>
+      <Script
+        type="text/javascript"
+        id="hs-script-loader"
+        async
+        defer
+        src="//js-eu1.hs-scripts.com/143329251.js"
+      ></Script>
       <Head>
         <title>
           {
@@ -117,9 +97,6 @@ const App = () => {
         </LazyShow>
       </div>
       <Analytics />
-      <button onClick={() => topFunction()} id="myBtn" title="Nach Oben">
-        <img width="50" height="50" alt="submit" src={logoTop} />
-      </button>
     </div>
   );
 };
