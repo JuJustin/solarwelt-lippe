@@ -7,6 +7,7 @@ import Analytics from '../components/Analytics';
 import Canvas from '../components/Canvas';
 import Header from '../components/Header';
 import LazyShow from '../components/LazyShow';
+import WhatsAppPopup from '../components/WhatsAppPopup';
 
 const App = () => {
   return (
@@ -54,6 +55,7 @@ const App = () => {
           }}
         />
       </Head>
+      <WhatsAppPopup />
       <div className={`relative bg-background`}>
         <div className="max-w-7xl mx-auto">
           <div
@@ -81,6 +83,9 @@ const App = () => {
             <b>Eintragung im Handelsregister</b> <br />
             Registergericht: Lemgo <br />
             Registernummer: HRB 11073
+            <br />
+            <br />
+            USt-ID.: DE363630968
           </p>
         </div>
       </div>

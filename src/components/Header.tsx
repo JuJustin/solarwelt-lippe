@@ -49,20 +49,24 @@ const Menu = ({ mainPage }: { mainPage: boolean }) => {
               </div>
             </div>
             <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-6">
-              {navigation.map((item) => (
-                <Link
-                  spy={true}
-                  active="active"
-                  smooth={true}
-                  duration={1000}
-                  key={item.name}
-                  to={item.href}
-                  href={item.href}
-                  className="font-medium text-gray-500 hover:text-gray-900"
-                >
-                  {mainPage ? item.name : ''}
-                </Link>
-              ))}
+              {mainPage ? (
+                navigation.map((item) => (
+                  <Link
+                    spy={true}
+                    active="active"
+                    smooth={true}
+                    duration={1000}
+                    key={item.name}
+                    to={item.href}
+                    href={item.href}
+                    className="font-medium text-gray-500 hover:text-gray-900"
+                  >
+                    {item.name}
+                  </Link>
+                ))
+              ) : (
+                <></>
+              )}
               <a
                 href="../angebot"
                 className={`px-2 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-background hover:text-primary`}

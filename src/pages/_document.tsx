@@ -7,13 +7,18 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={AppConfig.locale}>
-        <Head></Head>
+        <Head>
+          <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
           <noscript
             dangerouslySetInnerHTML={{
-              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=G-41Q1VPY9FG" height="0" width="0" style="display: none; visibility: hidden;" />`,
+              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBLHL4G4" height="0" width="0" style="display: none; visibility: hidden;" />`,
             }}
           />
         </body>

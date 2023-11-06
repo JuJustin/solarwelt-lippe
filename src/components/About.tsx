@@ -4,7 +4,7 @@ import config from '../config/index.json';
 
 const About = () => {
   const { company, about } = config;
-  const { logo, mail, name: companyName } = company;
+  const { logo, mail, phone, name: companyName } = company;
   const { socialMedia, sections } = about;
 
   return (
@@ -36,12 +36,10 @@ const About = () => {
           <li>
             <a
               className="flex flex-wrap items-center justify-center"
-              href={'tel:???'}
+              href={'tel:+4917657796989'}
             >
-              {/** add when phone number available 
               <img src={phone} alt={'phone number'} className="w-5 h-5 mr-1" />
-              <h1>???</h1>
-              */}
+              <h1>+49 1765 7796989</h1>
             </a>
           </li>
         </ul>

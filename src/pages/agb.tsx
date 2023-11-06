@@ -5,10 +5,12 @@ import Analytics from '../components/Analytics';
 import Canvas from '../components/Canvas';
 import Header from '../components/Header';
 import LazyShow from '../components/LazyShow';
+import WhatsAppPopup from '../components/WhatsAppPopup';
 
 const App = () => {
   return (
     <div className={`bg-background grid gap-y-16 overflow-hidden`}>
+      <WhatsAppPopup />
       <div className={`relative bg-background`}>
         <div className="max-w-7xl mx-auto">
           <div

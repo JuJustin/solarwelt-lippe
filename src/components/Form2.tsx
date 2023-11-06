@@ -213,7 +213,7 @@ const Form2 = () => {
             >
               <div className="centeros">
                 <p className="testTitle2">
-                  In 2 Minuten zu Ihrer individuellen Beratung aus
+                  In 2 Minuten zu Ihrem individuellen Angebot aus
                   Ostwestfalen-Lippe
                 </p>
               </div>
@@ -235,7 +235,7 @@ const Form2 = () => {
               sx={{ marginTop: '20px' }}
             >
               <Typography fontSize="20px" component="h2" variant="h2">
-                <b>{title}</b>
+                <p className="testTitle2">{title}</p>
               </Typography>
             </Stack>
           </Grid>

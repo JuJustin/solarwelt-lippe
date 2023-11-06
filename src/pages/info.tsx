@@ -8,6 +8,7 @@ import Analytics from '../components/Analytics';
 import Canvas from '../components/Canvas';
 import Form2 from '../components/Form2';
 import LazyShow from '../components/LazyShow';
+import WhatsAppPopup from '../components/WhatsAppPopup';
 import config from '../config/index.json';
 
 const App = () => {
@@ -49,13 +50,7 @@ const App = () => {
         data-blockingmode="auto"
         type="text/javascript"
       ></Script>
-      <Script
-        type="text/javascript"
-        id="hs-script-loader"
-        async
-        defer
-        src="//js-eu1.hs-scripts.com/143329251.js"
-      ></Script>
+      <WhatsAppPopup />
       <Head>
         <title>
           {

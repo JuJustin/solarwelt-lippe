@@ -217,59 +217,51 @@ const Form = () => {
                   name={'mail'}
                   value={''}
                 />
-                {disableFields ? (
-                  <div />
-                ) : (
-                  <CustomTextField
-                    changeHandler={handleChange}
-                    label={'Telefon'}
-                    name={'phone'}
-                    value={''}
-                  />
-                )}
+                <CustomTextField
+                  changeHandler={handleChange}
+                  label={'Telefon'}
+                  name={'phone'}
+                  value={''}
+                />
               </div>
-              {disableFields ? (
-                <div />
-              ) : (
-                <>
-                  <div className="divOneRow">
-                    <div className="flex-2">
-                      <CustomTextField
-                        changeHandler={handleChange}
-                        label={'Straße'}
-                        name={'address'}
-                        value={''}
-                      />
-                    </div>
-                    <div className="flex-1.3">
-                      <CustomTextField
-                        changeHandler={handleChange}
-                        label={'Hausnummer'}
-                        name={'address2'}
-                        value={''}
-                      />
-                    </div>
+              <>
+                <div className="divOneRow">
+                  <div className="flex-2">
+                    <CustomTextField
+                      changeHandler={handleChange}
+                      label={'Straße'}
+                      name={'address'}
+                      value={''}
+                    />
                   </div>
-                  <div className="divOneRow">
-                    <div className="flex-1">
-                      <CustomTextField
-                        changeHandler={handleChange}
-                        label={'PLZ'}
-                        name={'plz'}
-                        value={localStorage.getItem('plz')!}
-                      />
-                    </div>
-                    <div className="flex-3">
-                      <CustomTextField
-                        changeHandler={handleChange}
-                        label={'Ort'}
-                        name={'location'}
-                        value={''}
-                      />
-                    </div>
+                  <div className="flex-1.3">
+                    <CustomTextField
+                      changeHandler={handleChange}
+                      label={'Hausnummer'}
+                      name={'address2'}
+                      value={''}
+                    />
                   </div>
-                </>
-              )}
+                </div>
+                <div className="divOneRow">
+                  <div className="flex-1">
+                    <CustomTextField
+                      changeHandler={handleChange}
+                      label={'PLZ'}
+                      name={'plz'}
+                      value={localStorage.getItem('plz')!}
+                    />
+                  </div>
+                  <div className="flex-3">
+                    <CustomTextField
+                      changeHandler={handleChange}
+                      label={'Ort'}
+                      name={'location'}
+                      value={''}
+                    />
+                  </div>
+                </div>
+              </>
 
               {disableFields ? (
                 <div />

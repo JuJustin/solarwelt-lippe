@@ -2,13 +2,13 @@ import React from 'react';
 
 import config from '../config/index.json';
 
-const Pricing = () => {
-  const { pricing } = config;
-  const { items, title } = pricing;
+const Vorteile = () => {
+  const { vorteile } = config;
+  const { items, title } = vorteile;
   const [firstPlan, secondPlan, thirdPlan] = items;
 
   return (
-    <section className={`pricingsection bg-background py-0 z-10`} id="pricing">
+    <section className={`pricingsection bg-background py-0 z-10`} id="vorteile">
       <div className={`container mx-auto px-2 pt-4 pb-12 text-primary`}>
         <h1
           className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
@@ -107,4 +107,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Vorteile;

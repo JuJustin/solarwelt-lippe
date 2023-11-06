@@ -8,6 +8,7 @@ import Analytics from '../components/Analytics';
 import Canvas from '../components/Canvas';
 import Form2 from '../components/Form2';
 import LazyShow from '../components/LazyShow';
+import WhatsAppPopup from '../components/WhatsAppPopup';
 import config from '../config/index.json';
 
 const App = () => {
@@ -24,13 +25,6 @@ const App = () => {
         data-cbid="22485892-af19-4178-b416-a380fa7b170e"
         data-blockingmode="auto"
         type="text/javascript"
-      ></Script>
-      <Script
-        type="text/javascript"
-        id="hs-script-loader"
-        async
-        defer
-        src="//js-eu1.hs-scripts.com/143329251.js"
       ></Script>
       <Head>
         <title>
@@ -75,6 +69,7 @@ const App = () => {
           }}
         />
       </Head>
+      <WhatsAppPopup />
       <div className="flex items-center justify-center">
         <a href="../">
           <span className="sr-only">{companyName}</span>

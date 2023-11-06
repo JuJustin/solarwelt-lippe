@@ -18,29 +18,29 @@
   "navigation": [
     {
       "name": "Über uns",
-      "href": "product"
+      "href": "überuns"
     },
     {
       "name": "Lösungen",
-      "href": "features"
+      "href": "lösungen"
     },
 
     {
       "name": "Vorteile",
-      "href": "pricing"
+      "href": "vorteile"
     }
   ],
   "callToAction": {
-    "text": "Verfügbarkeit prüfen",
+    "text": "Angebot einfordern",
     "href": "../angebot"
   },
   "mainHero": {
     "title": "Sonnenenergie",
     "subtitle": "sauber, effizient, grenzenlos.",
     "description": "Wir sind stolz darauf, als zuverlässiger Partner im Photovoltaikanlagenbereich bekannte und geschätzte Standards in Bezug auf Qualität, Leistung und Kundenzufriedenheit zu setzen.",
-    "img": "/assets/images/mainPicture.jpg",
+    "img": "../assets/images/mainPicture.jpg",
     "primaryAction": {
-      "text": "Kostenloses Angebot einholen",
+      "text": "Angebot einfordern",
       "href": "../angebot"
     },
     "secondaryAction": {
@@ -48,7 +48,7 @@
       "href": "mailto:info@solarwelt-lippe.de?subject=Anfrage Photovoltaikanlage"
     }
   },
-  "product": {
+  "überuns": {
     "title": "Solarwelt-Lippe",
     "items": [
       {
@@ -59,7 +59,7 @@
       }
     ]
   },
-  "features": {
+  "lösungen": {
     "title": "Lösungen",
     "subtitle": "Qualität und Leistung: Unser Photovoltaikanlagen Betrieb setzt Maßstäbe",
     "description": "Unser Photovoltaikanlagenbetrieb steht für höchste Qualität und erstklassige Leistung. Wir liefern zuverlässige und effiziente Solarsysteme und bieten exzellenten Kundenservice, um nachhaltige Lösungen für unsere Kunden zu gewährleisten.",
@@ -86,7 +86,7 @@
       }
     ]
   },
-  "pricing": {
+  "vorteile": {
     "title": "Vorteile",
     "items": [
       {
@@ -133,7 +133,7 @@
     ],
     "socialMedia": {
       "instagram": "https://www.instagram.com/solarwelt_lippe/",
-      "whatsapp": "https://solarwelt-lippe.de"
+      "whatsapp": "https://api.whatsapp.com/send?phone=4917657796989"
     }
   }
 }

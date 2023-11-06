@@ -7,6 +7,7 @@ import Analytics from '../components/Analytics';
 import Canvas from '../components/Canvas';
 import Header from '../components/Header';
 import LazyShow from '../components/LazyShow';
+import WhatsAppPopup from '../components/WhatsAppPopup';
 
 const App = () => {
   return (
@@ -27,7 +28,7 @@ const App = () => {
         />
         <meta
           name="description"
-          content="Hier finden Sie Infomration pber den Datenschtz auf unserer Website!"
+          content="Hier finden Sie Infomration über den Datenschtz auf unserer Website!"
         />
         <script
           type="application/ld+json"
@@ -57,6 +58,7 @@ const App = () => {
           }}
         />
       </Head>
+      <WhatsAppPopup />
       <div className={`relative bg-background`}>
         <div className="max-w-7xl mx-auto">
           <div
