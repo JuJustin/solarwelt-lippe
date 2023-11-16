@@ -137,6 +137,7 @@ a:hover {
 }
 
 .whats-float {
+  display: flex;
   position: fixed;
   transform:translate(108px,0px);
   top:85%;
@@ -150,25 +151,14 @@ a:hover {
   transition: all 0.5s ease-in-out;
   vertical-align: middle
 }
-.whats-float a span {
+
+.whatsAppSpan {
   color: white;
   font-size: 12px;
   padding-top: 8px;
   padding-bottom: 10px;
-  position: absolute;
   line-height: 16px;
   font-weight: bolder;
-}
-
-.whats-float i {
-  font-size: 30px;
-  color: white;
-  line-height: 30px;
-  padding: 10px;
-  transform:rotate(0deg);
-  transition: all 0.5s ease-in-out;
-  text-align:center;
-
 }
 
 .whats-float:hover {
@@ -176,6 +166,9 @@ a:hover {
   transform:translate(0px,0px);
 }
 
-.whats-float:hover i  {
-  transform:rotate(360deg);
+.whatsAppImg {
+  color: white;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
 }

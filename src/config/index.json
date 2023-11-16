@@ -31,11 +31,11 @@
     }
   ],
   "callToAction": {
-    "text": "Angebot einfordern",
+    "text": "Zum Angebot",
     "href": "../angebot"
   },
   "mainHero": {
-    "title": "Sonnenenergie",
+    "title": "Ihre Photovoltaikanlage",
     "subtitle": "sauber, effizient, grenzenlos.",
     "description": "Wir sind stolz darauf, als zuverlässiger Partner im Photovoltaikanlagenbereich bekannte und geschätzte Standards in Bezug auf Qualität, Leistung und Kundenzufriedenheit zu setzen.",
     "img": "../assets/images/mainPicture.jpg",
@@ -55,7 +55,7 @@
         "title": "Zusammen Ihre Zukunft gestalten",
         "description": "Unser Photovoltaikanlagenbetrieb legt großen Wert auf das Vertrauen unserer Kunden. Von der Beratung bis zur Installation bieten wir ehrliche und transparente Kommunikation, hochwertige Produkte und professionelle Dienstleistungen. Unsere Solarmodule stammen von vertrauenswürdigen Herstellern, und unsere erfahrenen Techniker gewährleisten eine sorgfältige Installation gemäß branchenüblichen Standards.",
         "description2": "Wir bieten umfassende Garantien und sind stets für Fragen und Anliegen erreichbar. Unsere langfristige Ziel ist es, Kundenbeziehungen aufzubauen und Kundenzufriedenheit zu gewährleisten.",
-        "img": "/assets/images/solarbetrieb.png"
+        "img": "../assets/images/solarbetrieb.jpg"
       }
     ]
   },

@@ -1,23 +1,8 @@
 import React from 'react';
 
-import Head from 'next/head';
-import Script from 'next/script';
-
-import About from '../components/About';
-import Analytics from '../components/Analytics';
-import Canvas from '../components/Canvas';
-import Header from '../components/Header';
-import LazyShow from '../components/LazyShow';
-import Features from '../components/Lösungen';
-import MainHero from '../components/MainHero';
-import MainHeroImage from '../components/MainHeroImage';
-import Pricing from '../components/Vorteile';
-import WhatsAppPopup from '../components/WhatsAppPopup';
-import Product from '../components/Überuns';
+import MainContent from '../components/MainContent';
 
 const App = () => {
-  const stadt = 'Lügde';
-
   function scrollFunction() {
     const mybutton = document.getElementById('myBtn');
 
@@ -44,68 +29,7 @@ const App = () => {
   require('dotenv').config();
   return (
     <>
-      <Script
-        id="Cookiebot"
-        src="https://consent.cookiebot.com/uc.js"
-        data-cbid="22485892-af19-4178-b416-a380fa7b170e"
-        data-blockingmode="auto"
-        type="text/javascript"
-      ></Script>
-      <WhatsAppPopup />
-      <div className={`bg-background gap-y-16 overflow-hidden`}>
-        <Head>
-          <title>{`Photovoltaikanlage in ${stadt}`}</title>
-          <meta
-            property="og:title"
-            content={`Photovoltaikanlage in ${stadt}`}
-            key="title"
-          />
-        </Head>
-        <Head>
-          <link
-            rel="icon"
-            href="https://www.solarwelt-lippe.de/favicon.ico"
-            type="image/x-icon"
-          />
-          <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-          <meta
-            property="og:title"
-            content={`Photovoltaikanlage in ${stadt}`}
-            key="title"
-          />
-          <meta
-            name="description"
-            content="Sie möchten mit einer eigenen Photovoltaikanlage Strom erzeugen und Ihre Kosten senken? Profitieren Sie Dank Fördermittel des Staates. Jetzt informieren und und unverbindliches Angebot einholen!"
-          />
-        </Head>
-        <div className={`relative bg-background z-0`}>
-          <div className="max-w-7xl mx-auto">
-            <div
-              className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
-            >
-              <Header mainPage={true} />
-              <MainHero />
-            </div>
-          </div>
-          <MainHeroImage />
-        </div>
-        <LazyShow>
-          <Pricing />
-        </LazyShow>
-        <LazyShow>
-          <Features />
-        </LazyShow>
-        <LazyShow>
-          <Product />
-        </LazyShow>
-        <LazyShow>
-          <>
-            <Canvas />
-            <About />
-          </>
-        </LazyShow>
-        <Analytics />
-      </div>
+      <MainContent stadt="Lügde"></MainContent>
     </>
   );
 };

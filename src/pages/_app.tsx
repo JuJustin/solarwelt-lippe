@@ -14,6 +14,13 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
         })(window,document,'script','dataLayer','GTM-TBLHL4G4');
       `}
     </Script>
+    <Script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="22485892-af19-4178-b416-a380fa7b170e"
+      data-blockingmode="auto"
+      type="text/javascript"
+    ></Script>
     <Component {...pageProps} />
   </>
 );

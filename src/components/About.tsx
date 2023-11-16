@@ -17,9 +17,9 @@ const About = () => {
           <img src={logo} alt={companyName} className="w-44 h-44" />
         </div>
         <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-4 h-12">
-          <h5 className="font-bold text-xl md:text-base py-2 px-0 xl:px-4">
+          <h3 className="font-bold text-xl md:text-base py-2 px-0 xl:px-4">
             {'Kontakt'}
-          </h5>
+          </h3>
         </div>
         <ul>
           <li>
@@ -30,7 +30,7 @@ const About = () => {
               }
             >
               <img src={mail} alt={'Unsere E-Mail'} className="w-5 h-5 mr-1" />
-              <h1>info@solarwelt-lippe.de</h1>
+              <p>info@solarwelt-lippe.de</p>
             </a>
           </li>
           <li>
@@ -39,7 +39,7 @@ const About = () => {
               href={'tel:+4917657796989'}
             >
               <img src={phone} alt={'phone number'} className="w-5 h-5 mr-1" />
-              <h1>+49 1765 7796989</h1>
+              <p>+49 1765 7796989</p>
             </a>
           </li>
         </ul>
