@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Paderborn | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Paderborn | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Paderborn kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-paderborn';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Paderborn" leistung="Photovoltaikanlage" content={PaderbornContent} />
+      <MainContent2 city="Paderborn" leistung="Photovoltaik" content={PaderbornContent} />
     </>
   );
 };

@@ -1,97 +1,71 @@
-import React from 'react';
+// pages/index.tsx
+import Head from 'next/head';
+import MainContent2 from '../components/MainContent2';
+import OWLContent from '../components/OWLContent';
 
-import MainContent from '../components/MainContent';
+export default function Home({ city, leistung }: { city: string; leistung: string }) {
+  const pageTitle = `${leistung} ${city} | Solarwelt Lippe`;
+  const pageDescription = `${leistung} in ${city} kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot sichern.`;
+  const pageUrl = 'https://www.solarwelt-lippe.de';
+  const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
 
-const App = () => {
-  function scrollFunction() {
-    const mybutton = document.getElementById('myBtn');
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Solarwelt Lippe",
+    "image": imageUrl,
+    "url": pageUrl,
+    "telephone": "+49 1765 7796989",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Drosselweg 3",
+      "addressLocality": "Schieder-Schwalenberg",
+      "postalCode": "32616",
+      "addressCountry": "DE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "51.943402",
+      "longitude": "8.864981"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    "priceRange": "$"
+  };
 
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      if (mybutton !== null) {
-        mybutton.style.display = 'block';
-      }
-    } else if (mybutton !== null) {
-      mybutton.style.display = 'none';
-    }
-  }
-
-  // When the user scrolls down 20px from the top of the document, show the button
-  if (typeof window !== 'undefined') {
-    window.onscroll = function scroller() {
-      scrollFunction();
-    };
-  }
-
-  // eslint-disable-next-line global-require
-  require('dotenv').config();
   return (
     <>
-      <MainContent stadt="Ostwestfalen-Lippe"></MainContent>
-      <a className="w-50 h-50" href="../photovoltaikanlage-in-augustdorf">
-        <p className="sr-only">Photovoltaikanlage in Augustdorf</p>
-      </a>
-      <a className="w-50 h-50" href="../photovoltaikanlage-in-bad-pyrmont">
-        <p className="sr-only">Photovoltaikanlage in Bad Pyrmont</p>
-      </a>
-      <a className="w-50 h-50" href="../photovoltaikanlage-in-bad-salzuflen">
-        <p className="sr-only">Photovoltaikanlage in Bad Salzuflen</p>
-      </a>
-      <a className="w-50 h-50" href="../photovoltaikanlage-in-barntrup">
-        <p className="sr-only">Photovoltaikanlage in Barntrup</p>
-      </a>
-      <a className="w-50 h-50" href="../photovoltaikanlage-in-blomberg">
-        <p className="sr-only">Photovoltaikanlage in Blomberg</p>
-      </a>
-      <a className="w-50 h-50" href="../photovoltaikanlage-in-detmold">
-        <p className="sr-only">Photovoltaikanlage in Detmold</p>
-      </a>
-      <a className="w-50 h-50" href="../photovoltaikanlage-in-dörentrup">
-        <p className="sr-only">Photovoltaikanlage in Dörentrup</p>
-      </a>
-      <a className="w-50 h-50" href="../photovoltaikanlage-in-extertal">
-        <p className="sr-only">Photovoltaikanlage in Extertal</p>
-      </a>
-      <a
-        className="w-50 h-50"
-        href="../photovoltaikanlage-in-horn-bad-meinberg"
-      >
-        <p className="sr-only">Photovoltaikanlage in Horn-Bad Meinberg</p>
-      </a>
-      <a className="w-50 h-50" href="../photovoltaikanlage-in-Kalletal">
-        <p className="sr-only">Photovoltaikanlage in Kalletal</p>
-      </a>
-      <a className="w-50 h-50" href="../photovoltaikanlage-in-lage">
-        <p className="sr-only">Photovoltaikanlage in Lage</p>
-      </a>
-      <a className="w-50 h-50" href="../photovoltaikanlage-in-lemgo">
-        <p className="sr-only">Photovoltaikanlage in Lemgo</p>
-      </a>
-      <a className="w-50 h-50" href="../photovoltaikanlage-in-lügde">
-        <p className="sr-only">Photovoltaikanlage in Lügde</p>
-      </a>
-      <a className="w-50 h-50" href="../photovoltaikanlage-in-nieheim">
-        <p className="sr-only">Photovoltaikanlage in Nieheim</p>
-      </a>
-      <a
-        className="w-50 h-50"
-        href="../photovoltaikanlage-in-schieder-schwalenberg"
-      >
-        <p className="sr-only">Photovoltaikanlage in Schieder-Schwalenberg</p>
-      </a>
-      <a className="w-50 h-50" href="../photovoltaikanlage-in-schlangen">
-        <p className="sr-only">Photovoltaikanlage in Schlangen</p>
-      </a>
-      <a className="w-50 h-50" href="../photovoltaikanlage-in-steinheim">
-        <p className="sr-only">Photovoltaikanlage in Steinheim</p>
-      </a>
-      <a className="w-50 h-50" href="../photovoltaikanlage-in-hameln">
-        <p className="sr-only">Photovoltaikanlage in Hameln</p>
-      </a>
+      <Head>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Solarwelt Lippe" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href={pageUrl} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:image" content={imageUrl} />
+        <meta property="og:url" content={pageUrl} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={imageUrl} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      </Head>
+
+      <MainContent2 city={city} leistung={leistung} content={OWLContent} />
     </>
   );
-};
+}
 
-export default App;
+export async function getStaticProps() {
+  return {
+    props: {
+      city: 'Ostwestfalen-Lippe',
+      leistung: 'Photovoltaik',
+    },
+  };
+}

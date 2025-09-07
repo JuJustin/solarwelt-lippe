@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Bad Pyrmont | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Bad Pyrmont | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Bad Pyrmont kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-bad-pyrmont';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Bad Pyrmont" leistung="Photovoltaikanlage" content={BadPyrmontContent}/>
+      <MainContent2 city="Bad Pyrmont" leistung="Photovoltaik" content={BadPyrmontContent}/>
     </>
   );
 };

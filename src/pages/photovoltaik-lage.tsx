@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Lage | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Lage | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Lage kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-lage';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Lage" leistung="Photovoltaikanlage" content={LageContent} />
+      <MainContent2 city="Lage" leistung="Photovoltaik" content={LageContent} />
     </>
   );
 };

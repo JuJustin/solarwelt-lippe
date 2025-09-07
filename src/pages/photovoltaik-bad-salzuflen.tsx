@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Bad Salzuflen | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Bad Salzuflen | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Bad Salzuflen kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-bad-salzuflen';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Bad Salzuflen" leistung="Photovoltaikanlage" content={BadSalzuflenContent} />
+      <MainContent2 city="Bad Salzuflen" leistung="Photovoltaik" content={BadSalzuflenContent} />
     </>
   );
 };

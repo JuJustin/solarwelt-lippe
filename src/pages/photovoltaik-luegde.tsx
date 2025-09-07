@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Lügde | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Lügde | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Lügde kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-luegde';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Lügde" leistung="Photovoltaikanlage" content={LuegdeContent} />
+      <MainContent2 city="Lügde" leistung="Photovoltaik" content={LuegdeContent} />
     </>
   );
 };

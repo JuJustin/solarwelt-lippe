@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Augustdorf | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Augustdorf | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Augustdorf kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-augustdorf';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Augustdorf" leistung="Photovoltaikanlage" content={AugustdorfContent} />
+      <MainContent2 city="Augustdorf" leistung="Photovoltaik" content={AugustdorfContent} />
     </>
   );
 };

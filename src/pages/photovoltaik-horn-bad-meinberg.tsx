@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Horn-Bad Meinberg | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Horn-Bad Meinberg | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Horn-Bad Meinberg kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-horn-bad-meinberg';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Horn-Bad Meinberg" leistung="Photovoltaikanlage" content={HornBadMeinbergContent}/>
+      <MainContent2 city="Horn-Bad Meinberg" leistung="Photovoltaik" content={HornBadMeinbergContent}/>
     </>
   );
 };

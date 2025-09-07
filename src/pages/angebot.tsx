@@ -1,99 +1,51 @@
-import React from 'react';
+import React from "react";
 
-import Head from 'next/head';
-import Script from 'next/script';
+import Analytics from "../components/Analytics";
+import Canvas from "../components/Canvas";
+import LazyShow from "../components/LazyShow";
+import WhatsAppPopup from "../components/WhatsAppPopup";
+import Footer2 from "../components/Footer2";
+import OfferWidget from "../components/OfferWidget";
+import Navbar2 from "../components/Navbar2";
+import SecondHero from "../components/SecondHero";
+import { Box, Image } from "@chakra-ui/react";
 
-import About from '../components/About';
-import Analytics from '../components/Analytics';
-import Canvas from '../components/Canvas';
-import Form2 from '../components/Form2';
-import LazyShow from '../components/LazyShow';
-import WhatsAppPopup from '../components/WhatsAppPopup';
-import config from '../config/index.json';
-
-const App = () => {
-  const { company } = config;
-  const { name: companyName, logo } = company;
-
+const Angebot = () => {
   return (
-    <div
-      className={`websiteBackground bg-background grid gap-y-2  overflow-hidden`}
-    >
-      <Script
-        id="Cookiebot"
-        src="https://consent.cookiebot.com/uc.js"
-        data-cbid="22485892-af19-4178-b416-a380fa7b170e"
-        data-blockingmode="auto"
-        type="text/javascript"
-      ></Script>
-      <Head>
-        <title>
-          {
-            'Solarwelt-Lippe Photovoltaikanlage - Jetzt unverbindliches Angebot einholen!'
-          }
-        </title>
-        <meta
-          property="og:title"
-          content="Solarwelt-Lippe Photovoltaikanlage - Jetzt unverbindliches Angebot einholen!"
-          key="title"
-        />
-        <meta
-          name="description"
-          content="Sie möchten mit einer eigenen Photovoltaikanlage Strom erzeugen und Ihre Kosten senken? Profitieren Sie Dank Fördermittel des Staates. Jetzt informieren und und unverbindliches Angebot einholen!"
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'http://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
-                {
-                  '@type': 'ListItem',
-                  position: 1,
-                  item: {
-                    '@id': 'https://solarwelt-lippe.de/',
-                    name: 'Startseite',
-                  },
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 2,
-                  item: {
-                    '@id': 'https://solarwelt-lippe.de/angebot/',
-                    name: 'Angebot',
-                  },
-                },
-              ],
-            }),
-          }}
-        />
-      </Head>
+    <Box>
       <WhatsAppPopup />
-      <div className="flex items-center justify-center">
-        <a href="../">
-          <span className="sr-only">{companyName}</span>
-          <img
-            alt="logo"
-            className="h-32 scale-150 w-auto sm:h-32"
-            src={logo}
-          />
-        </a>
-      </div>
-      <div className="flex items-center justify-between w-full md:w-auto">
-        <Form2 />
-      </div>
+      <Navbar2/>
+      {/* First Box with SecondHero */}
+      <Box w="100%" position="relative" zIndex={1}>
+        <SecondHero height='200px' imageUrl={'/projects/angebot_anfordern.jpg'} title={''} text={''} />
+      </Box>
+      
+      {/* Second Box with the logo image, placed above the First Box */}
+      <Box
+        w="100%"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        position="relative"
+        mt="-80px"  // Moves the second box up above the first box
+        zIndex={2}
+      >
+        <Image src="/assets/images/logo.svg" alt="Image 3" w="300px" borderRadius='200px' p='30px' pb='0px'backgroundColor={'white'}/>
+      </Box>
+      
+      <OfferWidget />
+      
       <div>
         <LazyShow>
           <>
             <Canvas />
-            <About />
+            <Footer2 />
           </>
         </LazyShow>
       </div>
       <Analytics />
-    </div>
+    </Box>
   );
 };
 
-export default App;
+export default Angebot;

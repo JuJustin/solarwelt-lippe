@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Blomberg | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Blomberg | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Blomberg kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-blomberg';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Blomberg" leistung="Photovoltaikanlage" content={BlombergContent} />
+      <MainContent2 city="Blomberg" leistung="Photovoltaik" content={BlombergContent} />
     </>
   );
 };

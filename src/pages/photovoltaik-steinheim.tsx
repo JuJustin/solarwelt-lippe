@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Steinheim | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Steinheim | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Steinheim kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-steinheim';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Steinheim" leistung="Photovoltaikanlage" content={SteinheimContent}/>
+      <MainContent2 city="Steinheim" leistung="Photovoltaik" content={SteinheimContent}/>
     </>
   );
 };

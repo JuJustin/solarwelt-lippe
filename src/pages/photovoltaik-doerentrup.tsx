@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Dörentrup | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Dörentrup | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Dörentrup kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-doerentrup';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Dörentrup" leistung="Photovoltaikanlage" content={DoerentrupContent}/>
+      <MainContent2 city="Dörentrup" leistung="Photovoltaik" content={DoerentrupContent}/>
     </>
   );
 };

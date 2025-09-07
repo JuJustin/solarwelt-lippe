@@ -1,71 +1,20 @@
 import React from 'react';
 
-import Head from 'next/head';
-
-import About from '../components/About';
 import Analytics from '../components/Analytics';
 import Canvas from '../components/Canvas';
-import Header from '../components/Header';
 import LazyShow from '../components/LazyShow';
 import WhatsAppPopup from '../components/WhatsAppPopup';
+import Footer2 from '../components/Footer2';
+import Navbar2 from '../components/Navbar2';
 
 const App = () => {
   return (
+    <>
+    <Navbar2/>
     <div className={`bg-background grid gap-y-16 overflow-hidden`}>
-      <Head>
-        <title>{'Solarwelt-Lippe Photovoltaikanlage - Datenschutz!'}</title>
-        <meta
-          property="og:title"
-          content="Solarwelt-Lippe Photovoltaikanlage - Datenschutz!"
-          key="title"
-        />
-      </Head>
-      <Head>
-        <meta
-          property="og:title"
-          content="Solarwelt-Lippe Photovoltaikanlage - Datenschutz!"
-          key="title"
-        />
-        <meta
-          name="description"
-          content="Hier finden Sie Infomration über den Datenschtz auf unserer Website!"
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'http://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
-                {
-                  '@type': 'ListItem',
-                  position: 1,
-                  item: {
-                    '@id': 'https://solarwelt-lippe.de/',
-                    name: 'Startseite',
-                  },
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 2,
-                  item: {
-                    '@id': 'https://solarwelt-lippe.de/angebot/',
-                    name: 'Angebot',
-                  },
-                },
-              ],
-            }),
-          }}
-        />
-      </Head>
       <WhatsAppPopup />
       <div className={`relative bg-background`}>
         <div className="max-w-7xl mx-auto">
-          <div
-            className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
-          >
-            <Header mainPage={false} />
-          </div>
           <p>
             <b>Datenschutz</b>
           </p>
@@ -257,11 +206,12 @@ const App = () => {
       <LazyShow>
         <>
           <Canvas />
-          <About />
+          <Footer2 />
         </>
       </LazyShow>
       <Analytics />
     </div>
+    </>
   );
 };
 

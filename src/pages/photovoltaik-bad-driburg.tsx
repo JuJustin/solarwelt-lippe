@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Bad Driburg | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Bad Driburg | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Bad Driburg kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-bad-driburg';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Bad Driburg" leistung="Photovoltaikanlage" content={BadDriburgContent} />
+      <MainContent2 city="Bad Driburg" leistung="Photovoltaik" content={BadDriburgContent} />
     </>
   );
 };

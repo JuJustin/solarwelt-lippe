@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Altenbeken | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Altenbeken | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Altenbeken kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-altenbeken';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Altenbeken" leistung="Photovoltaikanlage" content={AltenbekenContent} />
+      <MainContent2 city="Altenbeken" leistung="Photovoltaik" content={AltenbekenContent} />
     </>
   );
 };

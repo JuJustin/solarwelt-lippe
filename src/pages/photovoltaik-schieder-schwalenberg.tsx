@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Schieder-Schwalenberg | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Schieder-Schwalenberg | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Schieder-Schwalenberg kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-schieder-schwalenberg';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Schieder-Schwalenberg" leistung="Photovoltaikanlage" content={SchiederSchwalenbergContent} />
+      <MainContent2 city="Schieder-Schwalenberg" leistung="Photovoltaik" content={SchiederSchwalenbergContent} />
     </>
   );
 };

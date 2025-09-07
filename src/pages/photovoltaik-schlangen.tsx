@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Schlangen | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Schlangen | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Schlangen kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-schlangen';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Schlangen" leistung="Photovoltaikanlage" content={SchlangenContent} />
+      <MainContent2 city="Schlangen" leistung="Photovoltaik" content={SchlangenContent} />
     </>
   );
 };

@@ -29,7 +29,7 @@ const blogPosts: BlogPost[] = [
   {
     slug: 'foerderung-photovoltaik-detmold',
     title: 'Förderung Photovoltaik Detmold — Ihr Weg zur staatlichen Unterstützung',
-    date: '2025-08-01',
+    date: '2025-08-10',
     excerpt:
       'Erfahren Sie alles über aktuelle Förderungen für Photovoltaik in Detmold und wie Sie davon profitieren können.',
     image: '/assets/images/foerderung-detmold.png',
@@ -37,12 +37,29 @@ const blogPosts: BlogPost[] = [
   {
     slug: 'stadtwerke-detmold-photovoltaik',
     title: 'Stadtwerke Detmold Photovoltaik – Ratgeber 2025 zu Einspeisung, Netzanschluss & Vergleich',
-    date: '2025-08-17',
+    date: '2025-08-13',
     excerpt:
       'Ihr Photovoltaik-Ratgeber 2025: Alles zu Einspeisung, Netzanschluss und ob sich die Stadtwerke Detmold oder eine eigene PV-Anlage mehr lohnt.',
     image: '/assets/images/stadtwerke-detmold-photovoltaik.jpeg',
+  },
+  {
+    slug: 'photovoltaikanlage-mit-speicher-paderborn-2025',
+    title: 'Photovoltaikanlage mit Speicher Paderborn 2025 – Lohnt sich das? Kosten, Förderung & Wirtschaftlichkeit',
+    date: '2025-08-14',
+    excerpt:
+      'Photovoltaikanlage mit Speicher in Paderborn 2025: Kosten, Förderung, Wirtschaftlichkeit & Amortisation. ✓ KfW-Kredit 270 ✓ Unabhängigkeit ✓ Kostenlose Beratung',
+    image: '/assets/images/photovoltaikanlage-speicher-paderborn-2025.png',
+  },
+  {
+    slug: 'solar-vs-photovoltaik-vergleich-2025',
+    title: 'Solar vs. Photovoltaik – Unterschiede, Vorteile & was sich 2025 lohnt',
+    date: '2025-08-17',
+    excerpt:
+      'Solar oder Photovoltaik? Wir erklären die Unterschiede zwischen Solarthermie und Photovoltaik, welche Lösung sich 2025 in OWL lohnt und was Hausbesitzer in Paderborn, Detmold & Umgebung beachten sollten.',
+    image: '/assets/images/solar-vs-photovoltaik.jpeg',
   }
 ];
+
 
 const BlogIndex: React.FC = () => {
   // Neueste zuerst sortieren

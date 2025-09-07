@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Lemgo | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Lemgo | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Lemgo kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-lemgo';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Lemgo" leistung="Photovoltaikanlage" content={LemgoContent} />
+      <MainContent2 city="Lemgo" leistung="Photovoltaik" content={LemgoContent} />
     </>
   );
 };

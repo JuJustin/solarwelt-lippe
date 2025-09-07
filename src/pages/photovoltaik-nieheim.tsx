@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Nieheim | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Nieheim | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Nieheim kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-nieheim';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Nieheim" leistung="Photovoltaikanlage" content={NieheimContent} />
+      <MainContent2 city="Nieheim" leistung="Photovoltaik" content={NieheimContent} />
     </>
   );
 };

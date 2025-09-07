@@ -4,7 +4,7 @@ import Canvas from '../../components/Canvas';
 import LargeWithLogoCentered from '../../components/Footer2';
 import FooterHero from '../../components/FooterHero';
 import LazyShow from '../../components/LazyShow';
-import Navbar2 from '../components/Navbar2';
+import Navbar2  from '../../components/Navbar2';
 import WhatsAppPopup from '../../components/WhatsAppPopup';
 import Image from 'next/image';
 import Link from 'next/link';

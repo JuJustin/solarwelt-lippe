@@ -18,7 +18,7 @@ const App = () => {
     return () => window.removeEventListener('scroll', scrollFunction);
   }, []);
 
-  const pageTitle = 'Photovoltaikanlage Oerlinghausen | Solarwelt Lippe';
+  const pageTitle = 'Photovoltaik Oerlinghausen | PV-Anlagen inkl. Speicher & Montage';
   const pageDescription = 'Photovoltaikanlage in Oerlinghausen kaufen – inklusive Beratung, Planung, Installation und Speicher. Jetzt kostenloses Angebot von Solarwelt Lippe sichern.';
   const pageUrl = 'https://www.solarwelt-lippe.de/photovoltaik-oerlinghausen';
   const imageUrl = 'https://www.solarwelt-lippe.de/assets/images/logo.svg';
@@ -83,7 +83,7 @@ const App = () => {
         />
       </Head>
 
-      <MainContent2 city="Oerlinghausen" leistung="Photovoltaikanlage" content={OerlinghausenContent} />
+      <MainContent2 city="Oerlinghausen" leistung="Photovoltaik" content={OerlinghausenContent} />
     </>
   );
 };

@@ -6,18 +6,19 @@ import { AppConfig } from '../utils/AppConfig';
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang={AppConfig.locale}>
-        <Head></Head>
-        <body>
-          <Main />
-          <NextScript />
-          <noscript
-            dangerouslySetInnerHTML={{
-              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBLHL4G4" height="0" width="0" style="display: none; visibility: hidden;" />`,
-            }}
-          />
-        </body>
-      </Html>
+        <Html lang={AppConfig.locale}>
+          <Head> <link
+            rel="icon"
+            href="https://www.solarwelt-lippe.de/favicon.ico"
+            type="image/x-icon"
+          /> <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+        </Head>
+          <body>
+            <Main />
+            <NextScript />
+          </body>
+        </Html>
     );
   }
 }
