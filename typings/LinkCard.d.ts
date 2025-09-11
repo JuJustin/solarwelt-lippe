@@ -1,6 +1,6 @@
 declare module MLinkCard {
   export interface Main {
-    LinkCard(): Pisskopf;
+    LinkCard(): Piss2kopf;
   }
 }
 
