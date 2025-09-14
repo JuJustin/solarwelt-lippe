@@ -1,217 +1,279 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  Hauptseiten  -->
-<url>
-<loc>https://www.solarwelt-lippe.de</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/leistungen</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/referenzen</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/kontakt</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/ueber-uns</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/angebot</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/impressum</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.50</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/datenschutz</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.50</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/AGB.pdf</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.30</priority>
-</url>
-<!--  Lokale SEO-Landingpages  -->
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-bad-salzuflen</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-detmold</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-bad-pyrmont</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-schieder-schwalenberg</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-altenbeken</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-augustdorf</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-bad-driburg</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-barntrup</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-bielefeld</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-blomberg</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-brakel</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-doerentrup</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-extertal</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-herford</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-hoexter</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-horn-bad-meinberg</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-kalletal</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-lage</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-lemgo</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-leopoldshoehe</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-loehne</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-luegde</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-nieheim</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-oerlinghausen</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-paderborn</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<!--  Schieder-Schwalenberg ist bereits vorhanden  -->
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-schlangen</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-steinheim</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/photovoltaik-vlotho</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.90</priority>
-</url>
-<!--  Blog  -->
-<url>
-<loc>https://www.solarwelt-lippe.de/blog</loc>
-<lastmod>2025-08-10</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/blog/foerderung-photovoltaik-detmold</loc>
-<lastmod>2025-08-10</lastmod>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/blog/stadtwerke-detmold-photovoltaik</loc>
-<lastmod>2025-08-13</lastmod>
-<priority>0.70</priority>
-</url>
-<url>
-<url>
-<loc>https://www.solarwelt-lippe.de/blog/photovoltaikanlage-mit-speicher-paderborn-2025</loc>
-<lastmod>2025-08-15</lastmod>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://www.solarwelt-lippe.de/blog/solar-vs-photovoltaik-vergleich-2025</loc>
-<lastmod>2025-08-17</lastmod>
-<priority>0.70</priority>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.solarwelt-lippe.de</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/leistungen</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/referenzen</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/kontakt</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/ueber-uns</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/angebot</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/impressum</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/datenschutz</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/AGB.pdf</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-bad-salzuflen</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-detmold</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-bad-pyrmont</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-schieder-schwalenberg</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-altenbeken</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-augustdorf</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-bad-driburg</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-barntrup</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-bielefeld</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-blomberg</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-brakel</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-doerentrup</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-extertal</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-herford</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-hoexter</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-horn-bad-meinberg</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-kalletal</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-lage</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-lemgo</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-leopoldshoehe</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-loehne</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-luegde</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-nieheim</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-oerlinghausen</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-paderborn</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-schlangen</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-steinheim</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/photovoltaik-vlotho</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/blog</loc>
+    <lastmod>2025-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/blog/foerderung-photovoltaik-detmold</loc>
+    <lastmod>2025-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/blog/stadtwerke-detmold-photovoltaik</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/blog/photovoltaikanlage-mit-speicher-paderborn-2025</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.solarwelt-lippe.de/blog/solar-vs-photovoltaik-vergleich-2025</loc>
+    <lastmod>2025-08-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+   <url>
+    <loc>https://www.solarwelt-lippe.de/blog/photovoltaik-stadtwerke-bielefeld</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+   <url>
+    <loc>https://www.solarwelt-lippe.de/blog/photovoltaik-firmen-bielefeld</loc>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+   <url>
+    <loc>https://www.solarwelt-lippe.de/blog/photovoltaikanlagen-bielefeld</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+   <url>
+    <loc>https://www.solarwelt-lippe.de/blog/photovoltaik-anbieter-bielefeld</loc>
+    <lastmod>2025-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
 </urlset>

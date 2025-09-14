@@ -57,7 +57,40 @@ const blogPosts: BlogPost[] = [
     excerpt:
       'Solar oder Photovoltaik? Wir erklären die Unterschiede zwischen Solarthermie und Photovoltaik, welche Lösung sich 2025 in OWL lohnt und was Hausbesitzer in Paderborn, Detmold & Umgebung beachten sollten.',
     image: '/assets/images/solar-vs-photovoltaik.jpeg',
-  }
+  },
+  // 🔥 Neue Bielefeld-Beiträge
+  {
+    slug: 'photovoltaik-foerderung-bielefeld',
+    title: 'Photovoltaik Förderung Bielefeld 2025 – Alle Zuschüsse im Überblick',
+    date: '2025-08-25',
+    excerpt:
+      'Welche Photovoltaik-Förderungen gibt es 2025 in Bielefeld? Alles über Zuschüsse von Stadt, NRW und KfW. Jetzt Fördermittel sichern und sparen!',
+    image: '/assets/images/foerderung-detmold.png',
+  },
+  {
+    slug: 'photovoltaik-anbieter-bielefeld',
+    title: 'Die besten Anbieter für Photovoltaik in Bielefeld – Vergleich & Tipps',
+    date: '2025-09-01',
+    excerpt:
+      'Finden Sie den passenden Anbieter für Photovoltaik in Bielefeld. Vergleich regionaler Firmen, Tipps zur Auswahl und warum lokale Anbieter Vorteile haben.',
+    image: '/assets/images/logo.svg',
+  },
+  {
+    slug: 'photovoltaikanlagen-bielefeld',
+    title: 'Photovoltaikanlagen in Bielefeld: Kosten, Ertrag & Erfahrungen',
+    date: '2025-09-07',
+    excerpt:
+      'Alles zu Photovoltaikanlagen in Bielefeld: Preise, Ertragswerte, Erfahrungen und Wirtschaftlichkeit. ✓ Lokale Beratung ✓ Beispiele aus OWL.',
+    image: '/projects/p2-1.svg',
+  },
+  {
+    slug: 'photovoltaik-stadtwerke-bielefeld',
+    title: 'Photovoltaik & Stadtwerke Bielefeld – lohnt sich der Wechsel?',
+    date: '2025-09-14',
+    excerpt:
+      'Stadtwerke Bielefeld oder unabhängiger Anbieter? Wir vergleichen Kosten, Service & Förderungen für Photovoltaik und zeigen die beste Wahl für 2025.',
+    image: '/assets/images/stadtwerke-detmold-photovoltaik.jpeg',
+  },
 ];
 
 
